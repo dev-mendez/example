@@ -1,0 +1,35 @@
+body{
+    padding: 5%;
+}
+button {
+    margin: auto;
+    color: white;
+    border-radius: 3px;
+    background-color: rgba(204, 238, 235, 0.404);
+    width: 32.3%;
+    min-width: 50px;
+    position: relative;
+  }
+  div{  
+      border-radius: 3px;
+  }
+
+  #navBar {
+    width: 90%;
+    min-width: 160px;
+    padding: 2px;
+    background-color: rgb(211, 162, 216);
+    text-align: center;
+    border-radius: 3px;
+    position:relative;
+    
+  }
+
+  #container {
+      
+    border: solid 1px;
+    margin-top: 5%;
+    width: 90%;
+    height: 25%;
+    text-align: center;
+  }
