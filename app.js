@@ -1,40 +1,34 @@
-//adding some method to de buttons
-
 class Button {
-  constructor(cont) {
-    this.cont = cont;
-    cont = document.getElementById('container');
-  }
-
-  static showText(cont) {
-    //Cleaning the current screen
-    //let cont = document.getElementById('container');
-    cont.innerHTML = '';
+    container = document.getElementById('container');
+  static showText() {
+    //Cleaning the current screens
+    //const container = document.getElementById('container');
+    container.innerHTML = '';
 
     //generating text
     // let cont = document.getElementById('container');
-    let p = document.createElement('p');
-    let b = document.createElement('hr');
-    let text = document.createTextNode(
+    const p = document.createElement('p');
+    const b = document.createElement('hr');
+    const text = document.createTextNode(
       'Soy un texto creado por el metodo showText de la clase Button'
     );
 
-    this.cont.appendChild(p.appendChild(text));
+    container.appendChild(p.appendChild(text));
 
     //changing bacground
-    cont.style.backgroundColor = 'rgb(218, 144, 226)';
+    container.style.backgroundColor = 'rgb(218, 144, 226)';
   }
 
   static showCountDown() {}
 
   static showHelp() {
-    //let cont = document.getElementById('container');
-    cont.innerHTML = '';
+    //const container = document.getElementById('container');
+    container.innerHTML = '';
     let p = document.createElement('p');
     let text = document.createTextNode(
       'If you need some help please visit this link www.help.com'
     );
-    cont.appendChild(p.appendChild(text));
-    cont.style.backgroundColor = 'rgb(118, 144, 226)';
+    container.appendChild(p.appendChild(text));
+    container.style.backgroundColor = 'rgb(118, 144, 226)';
   }
 }
